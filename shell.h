@@ -29,8 +29,8 @@ int main(void);
 int _strlen(char *);
 int env(void);
 int exitkbshell(void);
-/*int *printdir(void);
-int _setenv(const char *name, const char *value, int overwrite);*/
+int *printdir(void);
+int _setenv(const char *name, const char *value, int overwrite);
 int built(char *s);
 int printenv(void);
 int _strcmp(char *s1, char *s2);
@@ -40,7 +40,7 @@ char *fndpath(char *name);
 char *_strdup(char *str);
 char *str_concat(char *s1, char *s2);
 char *prompt(void);
-/*char **tokenizer(char *buffer);*/
+char **tokenizer(char *buffer);
 void _sigign(int sig);
 extern char **environ;
 
