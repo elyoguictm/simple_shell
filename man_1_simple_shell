@@ -1,0 +1,42 @@
+.TH man 1 "15 April 2021" "1.0" "Simple Shell"
+
+.SH NAME
+.B simple_shell
+- simple command interpreter.
+.SH SYNOPSIS
+simple_shell [command_string | file]
+
+.SH DESCRIPTION
+.B simple_shell
+The simple_shell reads lines from the terminal, interprets them, and generally executes other commands.  It is the program that is running when the user runs gcc -Wall -Werror -Wextra -pedantic *.c -o hsh and runs the executable file, \
+./hsh. The simple_shell implements a language that has flow control constructs, a macro facility that provides a variety of features in addition to data storage, along with built in history and line editing capabilities.  It incorporat\
+es many features to aid interactive use and has the advantage that the interpretative language is common to both interactive and non-interactive use (shell scripts).  That is, commands can be typed directly to the running shell or can b\
+e put into a file and the file can be executed directly by the shell.
+
+.SH OVERVIEW
+- simple_shell is a command-line interpreter that executes commands from the standard input.
+
+.SH BUGS
+No bugs, if u found something <2788@holbertonschool.com>
+
+.SH COMPILATION
+This shell will be compiled with this command line
+
+.B "gcc -g *.c -o kbsh"
+
+.SH SYNTAX
+.I 1.
+.B $ <command>
+
+Example
+$ ls
+
+.I 2.
+.B $ <command> <file_name>
+
+Example
+$ rm main.c
+
+.SH AUTHORS
+.B GABRIEL FERREIRA
+.B FEDERICO BLENGIO
